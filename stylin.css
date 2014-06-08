@@ -76,6 +76,15 @@ body {
 	width: 1024px;
 }
 
+.my-container2 {
+	/* makes the container at least a certain size */
+	margin-right: auto;
+	margin-left: auto;
+	width: 1024px;
+	background-color: #F0EAD6;
+}
+
+
 .top {
 	font-family: openLight;
 	background: url("img/back2.png") 50% 0px no-repeat fixed;
@@ -122,6 +131,16 @@ body {
 	left: 30px;
 }
 
+.top-logo {
+	margin-top: 20px;
+	position: absolute;
+	left:  30px;
+}
+
+#logo-text {
+	font-size: 20px;
+}
+
 .top-text {
 	font-family: openlight;
 	margin-top: 0px;
@@ -131,7 +150,7 @@ body {
 }
 
 .top-sub1 {
-	padding-top: 110px;
+	padding-top: 80px;
 	font-family: prime;
 	font-size: 50px;
 }
@@ -150,7 +169,23 @@ body {
 	display: inline;
 }
 
+.top-but {
+	margin-top: 50px;
+}
+
+.btn-lg {
+	font-size: 20px;
+	height: 55px;
+	width: 220px;
+}
+
 .first-buffer {
-	height: 85px;
+	height: 30px;
 	background-color: #b31b1b;
+}
+
+.middle {
+	background-color: white;
+	height: 1000px;
+
 }
