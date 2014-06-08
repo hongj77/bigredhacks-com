@@ -14,12 +14,6 @@
 }
 
 @font-face {
-	font-family: nymph;
-	src: url('/fonts/Nymphette/Nymphette.ttf');
-}
-
-
-@font-face {
 	font-family: museo;
 	src: url('/fonts/Museo/Museo100-Regular.otf');
 }
@@ -34,24 +28,63 @@
 	src: url('/fonts/Code/CODElight.otf');
 }
 
+@font-face {
+	font-family: cargo;
+	src: url('/fonts/Cargo/8th_Cargo.ttf');
+}
+
+@font-face {
+	font-family: saucer;
+	src: url('/fonts/saucer/SaucerBB.ttf');
+}
+
+@font-face {
+	font-family: cornell1;
+	src: url('/fonts/tex-gyre-pagella/texgyrepagella-regular.otf');
+}
+
+@font-face {
+	font-family: aller;
+	src: url('/fonts/Aller/Aller_Rg.ttf');
+}
+
+@font-face {
+	font-family: exo;
+	src: url('/fonts/exo/Exo-Bold.otf');
+}
+
+@font-face {
+	font-family: prime;
+	src: url('/fonts/prime/Prime Regular.otf');
+}
+
+@font-face {
+	font-family: casper;
+	src: url('/fonts/Casper/Casper_R.ttf');
+}
+
 body {
-	background-color: grey;
+	background-color: #A5A5A5;
 	height: 1500px;
 
 }
 
 .my-container {
+	/* makes the container at least a certain size */
 	margin-right: auto;
 	margin-left: auto;
-	width: 1020px;
+	width: 1024px;
 }
 
 .top {
-	font-family: openlight;
+	font-family: openLight;
 	background: url("img/back2.png") 50% 0px no-repeat fixed;
 	text-align: center;
 	width: 100%;
-	height: 600px;
+	height: 650px;
+	color: white;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
 }
 
 .decor{
@@ -61,10 +94,14 @@ body {
 }
 
 .title {
-	font-family: codelight;
+	font-family: saucer;
 	color: white;
 	font-size: 100px;
 	vertical-align: middle;
+}
+
+.Cred {
+	color: #b31b1b;
 }
 
 .cornell-logo {
@@ -86,10 +123,25 @@ body {
 }
 
 .top-text {
+	font-family: openlight;
 	margin-top: 0px;
 	padding-top: 100px;
-	font-size: 40px;
+	font-size: 50px;
 	color: white;
+}
+
+.top-sub1 {
+	padding-top: 110px;
+	font-family: prime;
+	font-size: 50px;
+}
+
+.top-sub2 {
+	font-size: 34px;
+}
+
+.top-sub3 {
+	font-size: 25px;
 }
 
 .top-p {
