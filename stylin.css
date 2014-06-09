@@ -20,12 +20,17 @@
 
 @font-face {
 	font-family: tilliumlight;
-	src: url('/fonts/Titillium/Titillium-Thin.otf');
+	src: url('/fonts/Titillium/Titillium-Regular.otf');
 }
 
 @font-face {
 	font-family: codelight;
 	src: url('/fonts/Code/CODElight.otf');
+}
+
+@font-face {
+	font-family: codebold;
+	src: url('/fonts/Code/CODEBold.otf');
 }
 
 @font-face {
@@ -69,6 +74,31 @@ body {
 
 }
 
+.nav-bar {
+	position: fixed;
+	background-color: rgba(255,0,0,0.8);
+	width: 150px;
+	left: -200px;
+	z-index: 1;
+	top: 50px;
+	padding-bottom: 20px;
+}
+
+.item {
+	color: white;
+	font-family: openlight;
+	font-size: 25px;
+}
+
+.nav-logo {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
 .my-container {
 	/* makes the container at least a certain size */
 	margin-right: auto;
@@ -87,19 +117,13 @@ body {
 
 .top {
 	font-family: openLight;
-	background: url("img/back2.png") 50% 0px no-repeat fixed;
+	background: url("img/back3.png") 50% 0px no-repeat fixed;
 	text-align: center;
 	width: 100%;
 	height: 650px;
 	color: white;
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
-}
-
-.decor{
-	color: white;
-	font-family: nymph;
-	font-size: 50px;
 }
 
 .title {
@@ -114,11 +138,8 @@ body {
 }
 
 .cornell-logo {
+	margin-top: 20px;
 	vertical-align: middle;
-}
-
-.front-logo {
-	
 }
 
 .top-wrapper {
@@ -171,6 +192,9 @@ body {
 
 .top-but {
 	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1024px;
 }
 
 .btn-lg {
@@ -184,8 +208,65 @@ body {
 	background-color: #b31b1b;
 }
 
+.second-buffer {
+	height: 30px;
+	background-color: #b31b1b;
+}
+
+.third-buffer {
+	height: 30px;
+	background-color: #b31b1b;
+}
+
+.fourth-buffer {
+	height: 30px;
+	background-color: #b31b1b;
+}
+
+.fifth-buffer {
+	height: 30px;
+	background-color: #b31b1b;
+}
+
+.sixth-buffer {
+	height: 30px;
+	background-color: #b31b1b;
+}
+
 .middle {
 	background-color: white;
-	height: 1000px;
 
+}
+
+.intro {
+	font-family: exo;
+	text-align: center;
+	font-size: 90px;
+	margin-bottom: 0px;
+}
+
+.intro-sub {
+	font-family: openLight;
+	font-size: 43px;
+	margin-top: -20px;
+}
+
+.intro-p {
+	font-size: 19px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro-img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.footer {
+	text-align: center;
+	color: white;
+	height: 60px;
+	background-color: black;
 }
