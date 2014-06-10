@@ -68,6 +68,11 @@
 	src: url('/fonts/Casper/Casper_R.ttf');
 }
 
+@font-face {
+	font-family: fontawesome;
+	src: url('/fonts/fontawesome/fontawesome-webfont.ttf');
+}
+
 body {
 	background-color: #A5A5A5;
 	height: 1500px;
@@ -83,6 +88,34 @@ body {
 	top: 50px;
 	padding-bottom: 20px;
 }
+
+
+
+.top-navbar {
+	position: fixed;
+	background-color: black;
+	width: 100%;
+	z-index: 1;
+	height: 50px;
+	top: -200px;
+
+}
+
+.navbar-elements {
+	color: white;
+	font-family: openlight;
+	font-size: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.nav-container {
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1024px;
+}
+
 
 .item {
 	color: white;
@@ -145,7 +178,6 @@ body {
 }
 
 .cornell-logo {
-	margin-top: 20px;
 	vertical-align: middle;
 }
 
@@ -255,12 +287,40 @@ body {
 	background-color: black;
 }
 
+.gen-icon {
+	display: inline;
+	margin-left: 30px;
+	margin-right: 30px;
+	transition: opacity .15s ease-in-out;
+	vertical-align: middle;
+}
+
+.icon-box {
+	display: inline;
+}
+
+.gen-icon:hover {
+	opacity: 0.3;
+}
+
+.left-icons {
+	margin-right: 70px;
+	display: inline;
+	margin-left: auto;
+}
+
+.right-icons {
+	margin-left: 70px;
+	display: inline;
+	margin-right: auto;
+}
+
 #about {
 	color: #2E9AFE;
 }
 
 #faq {
-	color:#FF8000;
+	color:#FE9A2E;
 }
 
 #apply {
@@ -268,13 +328,17 @@ body {
 }
 
 #sponsors {
-	color:#AC58FA;
+	color: #77DD77;
+	/*color:#AC58FA;*/
 }
 
 #share {
-	color:#00FF00;
+	color:#81BEF7;
+	/*color:#00FF00;*/
 }
 
 #contact {
-	color: #FE2EC8;
+	color:#836953;
+	/*color: #FE2EC8;*/
 }
+

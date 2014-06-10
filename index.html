@@ -8,11 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylin.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <!--==================BODY STARTS RIGHT HURR=============================-->
 <body>
-	<div class="nav-bar">
-		<img src="img/BRH.png" class="nav-logo" height=80 width=120>
+	<!-- <div class="nav-bar">
+		<img src="img/BRH.png" class="nav-logo" height=80 width=120 onclick="navigateTo(0)">
 		<div class="item" onclick="navigateTo(1)">
 			About
 		</div>
@@ -31,19 +32,43 @@
 		<div class="item" onclick="navigateTo(6)">
 			Contact
 		</div>
+	</div> -->
+
+	<div class="top-navbar">
+		<div class="nav-container">
+			<span class="navbar-elements">Home</span>
+			<span class="navbar-elements">About</span>
+			<span class="navbar-elements">FAQ</span>
+			<span class="navbar-elements">Apply</span>
+			<span class="navbar-elements">Sponsor</span>
+			<span class="navbar-elements">Contact</span>
+		</div>
 	</div>
 
 	<div class="top-wrapper">
 		<div class="top" id="home" data-stellar-background-ratio="0.5">
 			<div class="my-container">
 				<p class="top-sub1">INTRODUCING</p>
-				<h1 class="title animated fadeIn"> <span class="Cred"> BIG RED  &frasl;&frasl;</span> HACKS</h1>
+				<h1 class="title animated fadeIn"> <span class="Cred" onclick="navigateTo(0)"> BIG RED  &frasl;&frasl;</span> HACKS</h1>
 				<p class="top-sub2">Cornell's student-run hackthon.</p>
 				<p class="top-sub3">September 26 - 28, 2014</p>
-				<img class="cornell-logo" src="img/cornell.gif" height=100 width=100> <span class="top-p"></span>
-			</div>
-			<div class="top-but">
-				<button type="button" class="btn btn-success btn-primary btn-lg" onclick="navigateTo(3)">Sign me up!</button>
+				<div class="left-icons">
+					
+					<span class="gen-icon"><i class="fa fa-university fa-3x" onclick="navigateTo(1)"></i></span>
+					
+					<span class="gen-icon"><i class="fa fa-question-circle fa-3x" onclick="navigateTo(2)"></i></span>
+
+					<span class="gen-icon"><i class="fa fa-pencil-square-o fa-3x" onclick="navigateTo(3)"></i></span>
+				</div>		
+				<img class="cornell-logo" src="img/cornell.gif" height=100 width=100>
+				<div class="right-icons">
+					<span class="gen-icon"><i class="fa fa-gift fa-3x" onclick="navigateTo(4)"></i></span>
+					<span class="gen-icon"><i class="fa fa-paper-plane fa-3x" onclick="navigateTo(5)"></i></span>
+					<span class="gen-icon"><i class="fa fa-envelope-o fa-3x" onclick="navigateTo(6)"></i></span>
+				</div>
+				<div class="top-but">
+					<button type="button" class="btn btn-success btn-primary btn-lg animated fadeInDown" onclick="navigateTo(3)" >Sign me up!</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -58,6 +83,7 @@
 			<div class="intro-p">
 				BigRed//Hacks is the first ever student-run, large-scale hackathon at Cornell University. Across three days, students from all across the northeast will gather to build the coolest and most innovative projects, meet amazing people, and win some prizes along the way! We encourage all developers, regardless of technical ability or hackathon experience, to apply! Admission and food is free for all hackers.
 			</div>
+
 		</div>
 	</div>		
 	<div class="middle">
@@ -109,7 +135,7 @@
 			<div class="intro-p">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus non quam in mattis. Nulla facilisi. Integer lobortis justo est, vitae posuere nunc mollis vitae. Fusce eget eros eget turpis porttitor feugiat. Cras arcu libero, vulputate vitae nulla eu, porttitor euismod mi. Aliquam erat volutpat. Donec dignissim dictum elit, vel blandit felis ornare sed. Nam mattis in nulla sit amet imperdiet. Curabitur euismod lorem augue, quis elementum arcu interdum et. Suspendisse nec bibendum ipsum.
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus non quam in mattis. Nulla facilisi. Integer lobortis justo est, vitae posuere nunc mollis vitae. Fusce eget eros eget turpis porttitor feugiat. Cras arcu libero, vulputate vitae nulla eu, porttitor euismod mi. Aliquam erat volutpat. Donec dignissim dictum elit, vel blandit felis ornare sed. Nam mattis in nulla sit amet imperdiet. Curabitur euismod lorem augue, quis elementum arcu interdum et. Suspendisse nec bibendum ipsum.
-				
+
 			</div>
 		</div>
 	</div>			
@@ -129,7 +155,6 @@
 	<div class="footer">
 		this is a footer;
 	</div>
-
 </body>
 <!--==================BODY ENDSS RIGHT HURR==============================-->
 <script type="text/javascript">
@@ -144,11 +169,11 @@
 		var scrollTop = $window.scrollTop();
 		console.log(scrollTop);
 
-		if (scrollTop < 565 && !hidden) {
-			$('.nav-bar').animate({left: '-200px'}, 300);
+		if (scrollTop < 410 && !hidden) {
+			$('.top-navbar').animate({top: '-200px'}, 300);
 			hidden = true;
-		} else if (hidden && scrollTop >= 565) {
-			$('.nav-bar').animate({left: '0'}, 300);
+		} else if (hidden && scrollTop >= 410 ) {
+			$('.top-navbar').animate({top: '0'}, 300);
 			hidden = false;
 		}
 	});
@@ -163,9 +188,5 @@
 		$('html,body').animate({ scrollTop: $('#' + sections[sectionNumber]).offset().top }, 'slow');
 	  //$('html,body').animate({ scrollTop: $('#' + sections[sectionNumber]).offset().top }, 'slow');
 	}
-
-
-
 </script>
-
 </html>
