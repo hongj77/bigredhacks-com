@@ -89,6 +89,38 @@ body {
 	padding-bottom: 20px;
 }
 
+.blaze {
+	position: absolute;
+	left: 30px;
+	top: 1px;
+	cursor: pointer;
+}
+
+.nav-div {
+	float: left;
+	height: 50px;
+	line-height: 45px;
+	cursor: pointer;
+	transition: opacity .15s ease-in-out;
+}
+
+.nav-div:hover {
+	background-color: #b31b1b;
+}
+
+.butt {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+	border:2px solid white;
+	padding: 12px 16px;
+	font-size: 30px;
+	font-family: prime;
+}
+
+
 
 
 .top-navbar {
@@ -98,22 +130,22 @@ body {
 	z-index: 1;
 	height: 50px;
 	top: -200px;
-
 }
 
 .navbar-elements {
 	color: white;
 	font-family: openlight;
 	font-size: 20px;
-	margin-right: 50px;
-	margin-left: 50px;
+	margin-right: 25px;
+	margin-left: 25px;
+	cursor: pointer;
 }
 
 .nav-container {
-	margin-top: 10px;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: 115px;
 	width: 1024px;
+	position: relative;
 }
 
 
@@ -131,9 +163,9 @@ body {
 	margin-left: auto;
 }
 
-
 .my-container {
 	/* makes the container at least a certain size */
+	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 	width: 1024px;
@@ -144,7 +176,6 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	width: 1024px;
-	background-color: white;
 }
 
 .my-container3 {
@@ -152,7 +183,6 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	width: 1024px;
-	background-color: #EFF8FB;
 }
 
 .top {
@@ -166,11 +196,17 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 1024px) 	{
+	.top{width: 1024px}
+	.top-wrapper {width: 1024px}
+}
+
 .title {
 	font-family: saucer;
 	color: white;
 	font-size: 100px;
 	vertical-align: middle;
+	cursor: pointer;
 }
 
 .Cred {
@@ -221,6 +257,7 @@ body {
 
 .top-sub3 {
 	font-size: 25px;
+	margin-bottom: 20px;
 }
 
 .top-p {
@@ -244,12 +281,15 @@ body {
 
 .first-buffer {
 	height: 30px;
-	background-color: #585858;
+	background-color:  #424242;
 }
 
-.middle {
-	background-color: white;
+.middle:nth-child(even){
+	background-color: #EFF8FB;
+}
 
+.middle:nth-child(odd){
+	background-color: white;
 }
 
 .intro {
@@ -288,11 +328,23 @@ body {
 }
 
 .gen-icon {
-	display: inline;
-	margin-left: 30px;
-	margin-right: 30px;
 	transition: opacity .15s ease-in-out;
-	vertical-align: middle;
+	float: left;
+	margin-right: 26px;
+	margin-left: 26px;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+@media(max-width: 800px) {
+	.top-navbar {
+		display: none;
+	}
+}
+
+
+.icon1 {
 }
 
 .icon-box {
@@ -304,15 +356,27 @@ body {
 }
 
 .left-icons {
-	margin-right: 70px;
-	display: inline;
-	margin-left: auto;
+	position: absolute;
+	top: 420px;
+	left: 69px;
 }
 
 .right-icons {
-	margin-left: 70px;
-	display: inline;
-	margin-right: auto;
+	position: absolute;
+	left: 650px;
+	top: 420px;
+}
+
+.left-nav {
+	margin-left: 120px;
+	float: left;
+	text-align: left;
+}
+
+.right-nav {
+	margin-right: 30px;
+	float: right;
+	text-align: right;
 }
 
 #about {

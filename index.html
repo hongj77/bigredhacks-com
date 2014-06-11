@@ -12,36 +12,29 @@
 </head>
 <!--==================BODY STARTS RIGHT HURR=============================-->
 <body>
-	<!-- <div class="nav-bar">
-		<img src="img/BRH.png" class="nav-logo" height=80 width=120 onclick="navigateTo(0)">
-		<div class="item" onclick="navigateTo(1)">
-			About
-		</div>
-		<div class="item" onclick="navigateTo(2)">
-			FAQ
-		</div>
-		<div class="item" onclick="navigateTo(3)">
-			Apply
-		</div>
-		<div class="item" onclick="navigateTo(4)">
-			Sponsors
-		</div>
-		<div class="item" onclick="navigateTo(5)">
-			Share
-		</div>
-		<div class="item" onclick="navigateTo(6)">
-			Contact
-		</div>
-	</div> -->
-
 	<div class="top-navbar">
 		<div class="nav-container">
-			<span class="navbar-elements">Home</span>
-			<span class="navbar-elements">About</span>
-			<span class="navbar-elements">FAQ</span>
-			<span class="navbar-elements">Apply</span>
-			<span class="navbar-elements">Sponsor</span>
-			<span class="navbar-elements">Contact</span>
+			<img src="img/BRH.png" class="blaze" width=69 height=45 onclick="navigateTo(0)">
+			<div class="left-nav">
+				<div class="nav-div" onclick="navigateTo(1)">
+					<span class="navbar-elements">About</span>
+				</div>
+				<div class="nav-div" onclick="navigateTo(2)">
+					<span class="navbar-elements">FAQ</span>
+				</div>
+				<div class="nav-div" onclick="navigateTo(3)">
+					<span class="navbar-elements">Apply</span>
+				</div>
+				<div class="nav-div" onclick="navigateTo(4)">
+					<span class="navbar-elements">Sponsor</span>
+				</div>
+				<div class="nav-div" onclick="navigateTo(5)">
+					<span class="navbar-elements">Share</span>
+				</div>
+				<div class="nav-div" onclick="navigateTo(6)">
+				<span class="navbar-elements">Contact</span>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -49,25 +42,34 @@
 		<div class="top" id="home" data-stellar-background-ratio="0.5">
 			<div class="my-container">
 				<p class="top-sub1">INTRODUCING</p>
-				<h1 class="title animated fadeIn"> <span class="Cred" onclick="navigateTo(0)"> BIG RED  &frasl;&frasl;</span> HACKS</h1>
+				<h1 class="title animated fadeIn" onclick="navigateTo(0)"> <span class="Cred"> BIG RED  &frasl;&frasl;</span> HACKS</h1>
 				<p class="top-sub2">Cornell's student-run hackthon.</p>
 				<p class="top-sub3">September 26 - 28, 2014</p>
 				<div class="left-icons">
-					
-					<span class="gen-icon"><i class="fa fa-university fa-3x" onclick="navigateTo(1)"></i></span>
-					
-					<span class="gen-icon"><i class="fa fa-question-circle fa-3x" onclick="navigateTo(2)"></i></span>
-
-					<span class="gen-icon"><i class="fa fa-pencil-square-o fa-3x" onclick="navigateTo(3)"></i></span>
+					<div class="gen-icon"><i class="fa fa-university fa-3x" onclick="navigateTo(1)"></i>
+						<br>About&nbsp&nbsp
+					</div>
+					<div class="gen-icon"><i class="fa fa-question-circle fa-3x" onclick="navigateTo(2)"></i>
+						<br>FAQ&nbsp
+					</div>
+					<div class="gen-icon"><i class="fa fa-pencil-square-o fa-3x" onclick="navigateTo(3)"></i>
+						<br>Apply &nbsp&nbsp
+					</div>
 				</div>		
 				<img class="cornell-logo" src="img/cornell.gif" height=100 width=100>
 				<div class="right-icons">
-					<span class="gen-icon"><i class="fa fa-gift fa-3x" onclick="navigateTo(4)"></i></span>
-					<span class="gen-icon"><i class="fa fa-paper-plane fa-3x" onclick="navigateTo(5)"></i></span>
-					<span class="gen-icon"><i class="fa fa-envelope-o fa-3x" onclick="navigateTo(6)"></i></span>
+					<div class="gen-icon"><i class="fa fa-gift fa-3x" onclick="navigateTo(4)"></i>
+						<br>Sponsor
+					</div>
+					<div class="gen-icon"><i class="fa fa-paper-plane fa-3x" onclick="navigateTo(5)"></i>
+						<br>Share
+					</div>
+					<div class="gen-icon"><i class="fa fa-envelope-o fa-3x" onclick="navigateTo(6)"></i>
+						<br>Contact&nbsp
+					</div>
 				</div>
 				<div class="top-but">
-					<button type="button" class="btn btn-success btn-primary btn-lg animated fadeInDown" onclick="navigateTo(3)" >Sign me up!</button>
+					<button type="button" class="butt animated fadeInDown" onclick="navigateTo(3)" >Sign me up!</button>
 				</div>
 			</div>
 		</div>
@@ -83,7 +85,6 @@
 			<div class="intro-p">
 				BigRed//Hacks is the first ever student-run, large-scale hackathon at Cornell University. Across three days, students from all across the northeast will gather to build the coolest and most innovative projects, meet amazing people, and win some prizes along the way! We encourage all developers, regardless of technical ability or hackathon experience, to apply! Admission and food is free for all hackers.
 			</div>
-
 		</div>
 	</div>		
 	<div class="middle">
@@ -178,14 +179,15 @@
 		}
 	});
 
-	$('.item').mouseenter(function() {
-		$(this).animate({color: 'black'},200);
+	$('.butt').mouseover(function(event){
+		$('.butt').animate({'background-color':'white !important' }, 100);
+		console.log("blaze");
 	});
 
 
 	var sections = ['home', 'about', 'faq', 'apply', 'sponsors', 'share', 'contact'];
 	function navigateTo(sectionNumber){
-		$('html,body').animate({ scrollTop: $('#' + sections[sectionNumber]).offset().top }, 'slow');
+		$('html,body').animate({ scrollTop: $('#' + sections[sectionNumber]).offset().top - 50 }, 'slow');
 	  //$('html,body').animate({ scrollTop: $('#' + sections[sectionNumber]).offset().top }, 'slow');
 	}
 </script>
