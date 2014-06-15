@@ -6,94 +6,78 @@
 	font-family: openreg;
 	src: url('/fonts/open-sans/OpenSans-Regular.ttf');
 }
-
-
 @font-face {
 	font-family: nymph;
 	src: url('/fonts/Nymphette/Nymphette.ttf');
 }
-
 @font-face {
 	font-family: furore;
 	src: url('/fonts/Furore/Furore.otf');
 }
-
 @font-face {
 	font-family: museo;
 	src: url('/fonts/Museo/Museo100-Regular.otf');
 }
-
 @font-face {
 	font-family: tilliumlight;
 	src: url('/fonts/Titillium/Titillium-Regular.otf');
 }
-
 @font-face {
 	font-family: codelight;
 	src: url('/fonts/Code/CODElight.otf');
 }
-
 @font-face {
 	font-family: codebold;
 	src: url('/fonts/Code/CODEBold.otf');
 }
-
 @font-face {
 	font-family: cargo;
 	src: url('/fonts/Cargo/8th_Cargo.ttf');
 }
-
 @font-face {
 	font-family: saucer;
 	src: url('/fonts/saucer/SaucerBB.ttf');
 }
-
 @font-face {
 	font-family: cornell1;
 	src: url('/fonts/tex-gyre-pagella/texgyrepagella-regular.otf');
 }
-
 @font-face {
 	font-family: aller;
 	src: url('/fonts/Aller/Aller_Rg.ttf');
 }
-
 @font-face {
 	font-family: exo;
 	src: url('/fonts/exo/Exo-Bold.otf');
 }
-
 @font-face {
 	font-family: prime;
 	src: url('/fonts/prime/Prime Regular.otf');
 }
-
 @font-face {
 	font-family: casper;
 	src: url('/fonts/Casper/Casper_R.ttf');
 }
-
 @font-face {
 	font-family: fontawesome;
 	src: url('/fonts/fontawesome/fontawesome-webfont.ttf');
 }
-
 @font-face {
 	font-family: sourcesans;
 	src: url('/fonts/source-sans-pro/SourceSansPro-Regular.otf');
 }
-
 @font-face {
 	font-family: avantgarde;
 	src: url('/fonts/Avant-Garde-Gothic-Pro-Alt/AvantGardeGothicPro/ITCAvantGardePro-Bk.otf');
 }
 
+/*-------------------------------------------------------------------------------------------------*/
+
 body {
-	background-color: #A5A5A5;
+	background-color: grey;
 	height: 1500px;
 
 }
-
 .top-navbar {
 	position: fixed;
 	background-color: rgba(0,0,0,0.74);
@@ -102,14 +86,12 @@ body {
 	height: 50px;
 	top: -200px;
 }
-
 .blaze {
 	position: absolute;
 	left: 30px;
 	top: 1px;
 	cursor: pointer;
 }
-
 .navbar-elements {
 	color: white;
 	font-family: openlight;
@@ -118,14 +100,12 @@ body {
 	margin-left: 25px;
 	cursor: pointer;
 }
-
 .nav-container {
 	margin-right: auto;
 	margin-left: 115px;
 	width: 1024px;
 	position: relative;
 }
-
 .nav-div {
 	float: left;
 	height: 50px;
@@ -133,83 +113,19 @@ body {
 	cursor: pointer;
 	transition: opacity .15s ease-in-out;
 }
-
 .left-nav {
 	margin-left: 120px;
 	float: left;
 	text-align: left;
 }
-
 .right-nav {
 	margin-right: 30px;
 	float: right;
 	text-align: right;
 }
-
 .nav-div:hover {
 	background-color: #b31b1b;
 }
-
-.application {
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-	margin-bottom: 10px;
-	font-family: openLight;
-}
-
-.btn-xlarge {
-    padding: 18px 28px;
-    font-size: 22px;
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
- }
-
-.item {
-	color: white;
-	font-family: openlight;
-	font-size: 25px;
-}
-
-.my-container {
-	/* makes the container at least a certain size */
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	width: 1024px;
-}
-
-.my-container2 {
-	/* makes the container at least a certain size */
-	margin-right: auto;
-	margin-left: auto;
-	width: 1024px;
-}
-
-.my-container3 {
-	/* makes the container at least a certain size */
-	margin-right: auto;
-	margin-left: auto;
-	width: 1024px;
-}
-
-.faq-title {
-	font-size: 19px;
-	font-weight: bold;
-}
-
-.footer {
-	text-align: center;
-	width: 100%;
-}
-
-.footback {
-	background: url("img/back5.jpg") 50% 0px no-repeat fixed;
-	color: white;
-}
-
 .top {
 	font-family: openLight;
 	background: url("img/back3.png") 50% 0px no-repeat fixed;
@@ -220,7 +136,60 @@ body {
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 }
-
+.my-container {
+	/* makes the container at least a certain size */
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1024px;
+}
+.wrapper {
+	width: 100%;
+	background: url("img/back6.jpg") 50% 0px no-repeat fixed;
+}
+.my-container2 {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	width: 1024px;
+}
+.footer {
+	text-align: center;
+	background: url("img/back5.jpg") 50% 0px no-repeat fixed;
+	color: white;
+	width: 100%;
+}
+.foot-container {
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.application {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: openLight;
+}
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+.item {
+	color: white;
+	font-family: openlight;
+	font-size: 25px;
+}
+.faq-title {
+	font-size: 19px;
+	font-weight: bold;
+}
 .title {
 	font-family: saucer;
 	color: white;
@@ -228,35 +197,28 @@ body {
 	vertical-align: middle;
 	cursor: pointer;
 }
-
-.Cred {
+.Cred { 
 	color: #b31b1b;
 }
-
 .cornell-logo {
 	vertical-align: middle;
 }
-
 .top-wrapper {
 	width: 100%;
 }
-
 .logo {
 	position: absolute;
 	top: 20px;
 	left: 30px;
 }
-
 .top-logo {
 	margin-top: 20px;
 	position: absolute;
 	left:  30px;
 }
-
 #logo-text {
 	font-size: 20px;
 }
-
 .top-text {
 	font-family: openlight;
 	margin-top: 0px;
@@ -264,60 +226,58 @@ body {
 	font-size: 50px;
 	color: white;
 }
-
 .top-sub1 {
-	padding-top: 80px;
+	padding-top: 30px;
 	font-family: prime;
 	font-size: 50px;
 }
-
 .top-sub2 {
 	font-size: 34px;
 }
-
 .top-sub3 {
 	font-size: 25px;
 	margin-bottom: 20px;
 }
-
 .top-p {
 	font-size: 30px;
 	color: white;
 	display: inline;
 }
-
 .top-but {
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 1024px;
 }
-
 .btn-lg {
 	font-size: 20px;
 	height: 55px;
 	width: 220px;
 }
-
-.first-buffer {
-	height: 10px;
-	background-color:  #424242;
-}
-
-.second-buffer {
-	height: 25px;
-	background-color: black;
-}
-
 .middle:nth-child(even){
-	/*background-color: #EFF8FB;*/
-	background-color: #F2F2F2;
-}
-
-.middle:nth-child(odd){
 	background-color: white;
 }
-
+.middle:nth-child(odd){
+	background-color: #F2F2F2;
+}
+.contact-p {
+	font-size: 17px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+.intro-img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.intro-sub {
+	font-family: openLight;
+	font-size: 35px;
+	margin-top: -10px;
+	margin-bottom: 15px;
+}
 .intro {
 	font-family: exo;
 	text-align: center;
@@ -325,33 +285,14 @@ body {
 	margin-bottom: 0px;
 	padding-top: 20px;
 }
-
-.intro-sub {
-	font-family: openLight;
-	font-size: 35px;
-	margin-top: -10px;
-	margin-bottom: 15px;
-}
-
 .intro-p {
-/*	font-family: openreg;*/
 	font-size: 17px;
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 20px;
 }
-
-.intro-img {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.icon-box {
-	display: inline;
-}
-
+/*top shortcut icons*/
 .gen-icon {
 	transition: opacity .15s ease-in-out;
 	float: left;
@@ -364,19 +305,17 @@ body {
 .gen-icon:hover {
 	opacity: 0.3;
 }
-
 .left-icons {
 	position: absolute;
-	top: 420px;
+	top: 370px;
 	left: 69px;
 }
-
 .right-icons {
 	position: absolute;
 	left: 650px;
-	top: 420px;
+	top: 370px;
 }
-
+/*sponsors logo*/
 .microsoft {
 	display: block;
 	margin-top: 40px;
@@ -384,18 +323,35 @@ body {
 	margin-left: auto;
 	margin-bottom: 20px;
 }
-
 .wolfram {
 	margin-left: 200px;
 	margin-bottom: 30px;
 }
-
 .namecheap {
 	margin-left: 30px;
 	margin-bottom: 30px;
 }
-
-
+/*social media icons*/
+.twitter-icon {
+	font-size: 80px;
+	color: white;
+	transition: color .5s ease-in-out;
+}
+.twitter-icon:hover {
+	color: #4099FF;
+}
+.facebook-icon {
+	font-size: 80px;
+	color: white;
+	transition: color .5s ease-in-out;
+}
+.facebook-icon:hover {
+	color: #3B5998;
+}
+.social-media {
+	text-decoration: none !important;
+}
+/*section header colors */
 #about {
 	color: #2E9AFE;
 }
@@ -403,31 +359,35 @@ body {
 	color:#FE9A2E;
 }
 #apply {
-	color:#FA5858;
+	color:#e55a5a;
 }
 #sponsors {
 	color: #77DD77;
-	/*color:#AC58FA;*/
 }
 #share {
-	color:#81BEF7;
-	/*color:#00FF00;*/
+	color:white;
 }
 #contact {
 	color:white;
-	/*color: #FE2EC8;*/
 }
+/*resizing */
+@media (max-width: 1024px) {
+	.top {
+		width: 1024px;
+	}
+	.wrapper {
+		width: 1024px;
+	}
+	.footer {
+		width: 1024px;
+	}
 
-
+	.middle {
+		width: 1024px;
+	}
+}
 @media(max-width: 800px) {
 	.top-navbar {
 		display: none;
 	}
 }
-
-@media (max-width: 1024px) 	{
-	.top{width: 1024px}
-	.top-wrapper {width: 1024px}
-}
-
-
