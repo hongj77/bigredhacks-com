@@ -339,6 +339,9 @@ body {
 }
 .twitter-icon:hover {
 	color: #4099FF;
+	#share {
+		color:#4099FF ;
+	}
 }
 .facebook-icon {
 	font-size: 80px;
