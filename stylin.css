@@ -108,7 +108,7 @@ body {
 }
 .nav-container {
 	margin-right: auto;
-	margin-left: 115px;
+	margin-left: auto;
 	width: 1024px;
 	position: relative;
 }
@@ -120,13 +120,13 @@ body {
 	transition: opacity .15s ease-in-out;
 }
 .left-nav {
-	margin-left: 210px;
+	margin-left: 305px;
 	float: left;
 	text-align: left;
 }
 .blaze {
 	position: absolute;
-	left: 130px;
+	left: 225px;
 	top: 1px;
 	cursor: pointer;
 }
@@ -205,7 +205,7 @@ body {
 .title {
 	text-shadow: 0 0 100px rgba(255,255,255,.2);
 	font-family: mohave;
-	color: white;
+	color: #D8D2C9;
 	font-size: 125px;
 	vertical-align: middle;
 }
