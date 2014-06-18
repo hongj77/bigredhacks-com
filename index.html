@@ -6,11 +6,11 @@
 	<link rel="shortcut icon", href="img/favicon.ico", type="image/x-icon">
     <link rel="icon", href="img/favicon.ico", type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="stylin.min.css">
+	<link rel="stylesheet" type="text/css" href="stylin.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link href="font-awesome.min.css" rel="stylesheet">
 </head>
-<!--==================BODY STARTS RIGHT HURR=============================-->
+
 <body>
 	<div class="top-navbar">
 		<div class="nav-container">
@@ -19,11 +19,11 @@
 				<div class="nav-div" onclick="navigateTo(1)">
 					<span class="navbar-elements">About</span>
 				</div>
-				<div class="nav-div" onclick="navigateTo(2)">
-					<span class="navbar-elements">FAQ</span>
-				</div>
 				<div class="nav-div" onclick="navigateTo(3)">
 					<span class="navbar-elements">Apply</span>
+				</div>
+				<div class="nav-div" onclick="navigateTo(2)">
+					<span class="navbar-elements">FAQ</span>
 				</div>
 				<div class="nav-div" onclick="navigateTo(4)">
 					<span class="navbar-elements">Sponsor</span>
@@ -31,39 +31,30 @@
 				<div class="nav-div" onclick="navigateTo(5)">
 					<span class="navbar-elements">Share</span>
 				</div>
-				<div class="nav-div" onclick="navigateTo(6)">
-				<span class="navbar-elements">Contact</span>
-				</div>
 			</div>
 		</div>
 	</div>
-	<div class="top" id="home" data-stellar-background-ratio="0.5">
+	<div class="top unselectable" id="home" data-stellar-background-ratio="0.5">
 		<div class="my-container animated fadeIn">
-			<p class="top-sub1">INTRODUCING</p>
-			<h1 class="title" onclick="navigateTo(0)"> <span class="Cred"> BIG RED  &frasl;&frasl;</span> HACKS</h1>
-			<p class="top-sub2">Cornell's student-run hackthon.</p>
-			<p class="top-sub3">September 26 - 28, 2014</p>
+			<p class="top-sub1">JOIN US FOR</p>
+			<h1 class="title"> <span class="Cred"> BIGRED <span style="font-family:Helvetica;">&frasl;&frasl;</span></span></span> HACKS</h1>
+			<h1 class="top-sub2">Cornell's student-run hackthon.</h1>
+			<div class="top-sub3">September 26 - 28, 2014</div>
 			<div class="left-icons">
-				<div class="gen-icon"><i class="fa fa-university fa-3x" onclick="navigateTo(1)"></i>
-					<br>About&nbsp&nbsp
+				<div class="gen-icon"><i class="fa fa-info-circle fa-3x" onclick="navigateTo(1)"></i>
+					<br><b>About&nbsp&nbsp</b>
 				</div>
 				<div class="gen-icon"><i class="fa fa-question-circle fa-3x" onclick="navigateTo(2)"></i>
-					<br>FAQ&nbsp
-				</div>
-				<div class="gen-icon"><i class="fa fa-pencil-square-o fa-3x" onclick="navigateTo(3)"></i>
-					<br>Apply &nbsp&nbsp
+					<br><b>FAQ&nbsp</b>
 				</div>
 			</div>		
-			<img class="cornell-logo" src="img/cornell.gif" height=100 width=100>
+			
 			<div class="right-icons">
 				<div class="gen-icon"><i class="fa fa-gift fa-3x" onclick="navigateTo(4)"></i>
-					<br>Sponsor
+					<br><b>Sponsor</b>
 				</div>
 				<div class="gen-icon"><i class="fa fa-paper-plane fa-3x" onclick="navigateTo(5)"></i>
-					<br>Share
-				</div>
-				<div class="gen-icon"><i class="fa fa-envelope-o fa-3x" onclick="navigateTo(6)"></i>
-					<br>Contact&nbsp
+					<br><b>Share</b>
 				</div>
 			</div>
 			<div class="top-but">
@@ -73,20 +64,36 @@
 	</div>
 	<div class="middle">
 		<div class="my-container">
-			<div class="intro" id="about">
-				<div>ABOUT</div>
-				<div class="intro-sub">who are we?</div>
-			</div>
+			<h2 class="intro-sub" id="about">
+				<b>What is BigRed//Hacks?</b>
+			</h2>
+
 			<div class="intro-p">
-				BigRed//Hacks is the first ever student-run, large-scale hackathon at Cornell University. Across three days, students from all across the northeast will gather to build the coolest and most innovative projects, meet amazing people, and win some prizes along the way! We encourage all developers, regardless of technical ability or hackathon experience, to apply! Admission and food is free for all hackers.
+				BigRed//Hacks is the first ever student-run, large-scale hackathon at Cornell University. Across three days, students from all across the northeast will gather to build the coolest and most innovative projects, meet amazing people, and win some prizes along the way!<br><br>
+
+				We encourage all developers regardless of technical ability or hackathon experience to apply. Admission and food is free for all hackers.
 			</div>
 		</div>
-	</div>		
+	</div>
+
+	<div class="middle">
+			<div class="my-container">
+				<div class="intro-sub" id="apply">
+				<b>Apply Now!</b>
+				</div>
+				<div class="intro-p">
+					<div class="application">
+						<button class="btn btn-success btn-xlarge" onclick="window.location = 'https://docs.google.com/forms/d/1T1JlpWfK3hYKt3RpCTuQalZtERvyIqUSEoV2tMIAzGM/viewform'"><i class="fa fa-file-text-o">&nbsp</i>General Application</button>
+						<button class="btn btn-success btn-xlarge" onclick="window.location = 'https://docs.google.com/forms/d/14EGJ86wtzLPMff4zjryKWtjDBQ6Po9yBEZif9M6H4JM/viewform'"><i class="fa fa-file-text-o">&nbsp</i>Cornell/Ithaca Application</button>
+					</div>
+				</div>
+			</div>
+	</div>	
+
 	<div class="middle">
 		<div class="my-container">
-			<div class="intro" id="faq">
-				<div>FAQ</div>
-				<div class="intro-sub">ask us anything</div>
+			<div class="intro-sub" id="faq">
+				<b>Frequently Asked Questions</b>
 			</div>
 			<div class="intro-p">
 				<span class="faq-title">Who is eligible to participate?</span><br>
@@ -146,33 +153,24 @@
 
 				<span class="faq-title">Why is there an application?</span><br>
 				We want to guarantee that students from a wide range of schools, backgrounds, and experiences are given an equal and fair chance to participate. Further, we hope that the process will encourage registrants to be committed to build something awesome. Even if you've never been to a hackathon before, please apply!<br><br>
+
+				<span class="faq-title">Have more questions?</span><br>
+				Send them to <a href="mailto:info@bigredhacks.com">info@bigredhacks.com</a>, or tweet us <a href="https://twitter.com/BigRedHacks">@BigRedHacks</a>.
 			</div>
 		</div>
 	</div>
-	<div class="middle">
-			<div class="my-container">
-				<div class="intro" id="apply">
-						<div>Apply</div>
-						<div class="intro-sub">bring friends!</div>
-				</div>
-				<div class="intro-p">
-					<div class="application">
-						<button class="btn btn-info btn-xlarge" onclick="window.location = 'https://docs.google.com/forms/d/1T1JlpWfK3hYKt3RpCTuQalZtERvyIqUSEoV2tMIAzGM/viewform'"><i class="fa fa-file-text-o">&nbsp</i>General Application</button>
-						<button class="btn btn-info btn-xlarge" onclick="window.location = 'https://docs.google.com/forms/d/14EGJ86wtzLPMff4zjryKWtjDBQ6Po9yBEZif9M6H4JM/viewform'"><i class="fa fa-file-text-o">&nbsp</i>Cornell/Ithaca Application</button>
-					</div>
-				</div>
-			</div>
-	</div>		
+		
 	<div class="middle">
 		<div class="my-container">
-			<div class="intro" id="sponsors">
-				<div>Sponsors</div>
-				<div class="intro-sub">amazing companies</div>
+			<div class="intro-sub" id="sponsors">
+				<b>Our Amazing Sponsors</b>
 			</div>
 			<div class="sponsor-images">
 				<img src="img/microsoft.jpg" class="microsoft" width=680 height=145>
+				<img src="img/bloomberg.png" class="bloomberg"width=300 height=60>
 				<img src="img/wolfram.png" class="wolfram" width=400 height=85>
 				<img src="img/namecheap.png" class="namecheap" width=200 height=113>
+
 			</div>
 			<div class="intro-p" style="text-align: center;">
 				<a href="mailto:sponsors@bigredhacks.com">
@@ -181,11 +179,10 @@
 			</div>
 		</div>
 	</div>		
-	<div class="footer" data-stellar-background-ratio="0.5">
+	<div class="footer" data-stellar-background-ratio="0.5" id="share">
 		<div class="foot-container">
-			<div class="intro" id="share">
-				<div>Share</div>
-				<div class="intro-sub">spread the word</div>
+				<div class="intro-sub" style="color:white; margin-bottom:10px;"><b>Spread the word</b></div>
+				<span style="font-size:16px;">Hackathons are more fun with friends!</span>
 			</div>
 			<a href="https://twitter.com/BigRedHacks" class="social-media">
 				<span class="twitter-icon">
@@ -197,21 +194,19 @@
 					<i class="fa fa-facebook-square"></i>
 				</span>
 			</a>
-			<div class="contact-p" id="contact">
+			<div class="contact-p">
 				<hr>
-				Have questions? Send them to <a href="mailto:info@bigredhacks.com">info@bigredhacks.com</a>
+				&copy 2014 BigRed//Hacks. All other trademarks and logos &copy their respective owners. <br><br>
+				From Ithaca with &hearts;<br><br>
 				<div style="font-size: 13px; margin-top:0px; margin-bottom: 40px;">
-					website created by <a href="http://www.hongjeon.com">hongjeon.com</a>
+					Website by <a href="http://www.hongjeon.com">Hong Jeon</a>
 				</div>
-				<img src="img/logo.png" width=120 height=100>
-				<div style="font-size: 10px; margin-top: 5px;">
-					&copy 2014 BigRed//Hacks
-				</div>
+				<img src="img/logo.png" width=120 height=100 onclick="navigateTo(0)">
 			</div>
 		</div>
 	</div>
 </body>
-<!--==================BODY ENDSS RIGHT HURR==============================-->
+
 <script type="text/javascript">
 	$.stellar(
 		{horizontalScrolling:false}
@@ -236,7 +231,7 @@
 		$('.twitter-icon').animate({color:'red'},500);
 	});
 
-	var sections = ['home', 'about', 'faq', 'apply', 'sponsors', 'share', 'contact'];
+	var sections = ['home', 'about', 'faq', 'apply', 'sponsors', 'share'];
 	function navigateTo(sectionNumber){
 		$('html,body').animate({ scrollTop: $('#' + sections[sectionNumber]).offset().top - 50 }, 'slow');
 	  //$('html,body').animate({ scrollTop: $('#' + sections[sectionNumber]).offset().top }, 'slow');

@@ -2,6 +2,17 @@
 	font-family: openLight;
 	src: url('fonts/open-sans/OpenSans-Light.ttf');
 }
+
+@font-face {
+	font-family: mohave;
+	src: url('fonts/Mohave-Typefaces/Mohave-Bold.otf');
+}
+
+@font-face {
+	font-family: istok;
+	src: url('fonts/istok/Istok-Bold.ttf');
+}
+
 @font-face {
 	font-family: openreg;
 	src: url('fonts/open-sans/OpenSans-Regular.ttf');
@@ -191,11 +202,11 @@ body {
 	font-weight: bold;
 }
 .title {
-	font-family: saucer;
+	text-shadow: 0 0 100px rgba(255,255,255,.2);
+	font-family: mohave;
 	color: white;
-	font-size: 100px;
+	font-size: 125px;
 	vertical-align: middle;
-	cursor: pointer;
 }
 .Cred { 
 	color: #b31b1b;
@@ -227,8 +238,9 @@ body {
 	color: white;
 }
 .top-sub1 {
-	padding-top: 30px;
-	font-family: prime;
+	padding-top: 50px;
+	font-family: avantgarde;
+	/*font-family: codebold;*/
 	font-size: 50px;
 }
 .top-sub2 {
@@ -236,15 +248,16 @@ body {
 }
 .top-sub3 {
 	font-size: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
+
 .top-p {
 	font-size: 30px;
 	color: white;
 	display: inline;
 }
 .top-but {
-	margin-top: 50px;
+	margin-top: 0px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 1024px;
@@ -261,7 +274,7 @@ body {
 	background-color: #F2F2F2;
 }
 .contact-p {
-	font-size: 17px;
+	font-size: 14px;
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
@@ -276,7 +289,11 @@ body {
 	font-family: openLight;
 	font-size: 35px;
 	margin-top: -10px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 40px;
+	color: #b31b1b;
 }
 .intro {
 	font-family: exo;
@@ -284,13 +301,14 @@ body {
 	font-size: 75px;
 	margin-bottom: 0px;
 	padding-top: 20px;
+	color:#b31b1b;
 }
 .intro-p {
 	font-size: 17px;
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 }
 /*top shortcut icons*/
 .gen-icon {
@@ -301,19 +319,21 @@ body {
 	text-align: center;
 	font-size: 15px;
 	cursor: pointer;
+	font-family: "Helvetica Neue";
+	font-size: 19px;
 }
 .gen-icon:hover {
 	opacity: 0.3;
 }
 .left-icons {
 	position: absolute;
-	top: 370px;
-	left: 69px;
+	top: 420px;
+	left: 120px;
 }
 .right-icons {
 	position: absolute;
-	left: 650px;
-	top: 370px;
+	left: 672px;
+	top: 420px;
 }
 /*sponsors logo*/
 .microsoft {
@@ -329,6 +349,11 @@ body {
 }
 .namecheap {
 	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.bloomberg {
+	margin-left: 350px;
 	margin-bottom: 30px;
 }
 /*social media icons*/
@@ -354,25 +379,16 @@ body {
 .social-media {
 	text-decoration: none !important;
 }
-/*section header colors */
-#about {
-	color: #2E9AFE;
+
+.unselectable {
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
-#faq {
-	color:#FE9A2E;
-}
-#apply {
-	color:#e55a5a;
-}
-#sponsors {
-	color: #77DD77;
-}
-#share {
-	color:white;
-}
-#contact {
-	color:white;
-}
+
 /*resizing */
 @media (max-width: 1024px) {
 	.top {
