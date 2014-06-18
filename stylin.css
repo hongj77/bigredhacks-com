@@ -97,12 +97,7 @@ body {
 	height: 50px;
 	top: -200px;
 }
-.blaze {
-	position: absolute;
-	left: 30px;
-	top: 1px;
-	cursor: pointer;
-}
+
 .navbar-elements {
 	color: white;
 	font-family: openlight;
@@ -125,9 +120,15 @@ body {
 	transition: opacity .15s ease-in-out;
 }
 .left-nav {
-	margin-left: 120px;
+	margin-left: 210px;
 	float: left;
 	text-align: left;
+}
+.blaze {
+	position: absolute;
+	left: 130px;
+	top: 1px;
+	cursor: pointer;
 }
 .right-nav {
 	margin-right: 30px;
