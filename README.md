@@ -1,5 +1,7 @@
 BigRed--Hacks-Web
 =================
 
-Making of the website for Cornell BigRed//Hacks event. There were a few changes made before it was launched, but check it out at www.bigredhacks.com <br>
+Website for Cornell BigRed//Hacks event. <br>
+Check out the original design at: www.hongjeon.com/bigredhacks
+Live website with changes made by committee: www.bigredhacks.com <br>
 
